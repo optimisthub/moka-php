@@ -1,0 +1,22 @@
+{
+    "name": "moka/moka-php",
+    "type": "library",
+    "description": "Moka PHP Client",
+    "keywords": [
+        "moka",
+        "moka php",
+        "moka api",
+        "moka php client"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Moka\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "ext-json": "*"
+    }
+}
