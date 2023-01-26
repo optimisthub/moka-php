@@ -9,6 +9,7 @@ use Moka\Model\CaptureRequest;
 use Moka\Model\CreateMobilePaymentRequest;
 use Moka\Model\CreatePaymentRequest;
 use Moka\Model\PaymentDealerRequest;
+use Moka\Model\RetrieveInstallmentInfoRequest;
 use Moka\Model\RetrievePaymentAmountRequest;
 use Moka\Model\RetrievePaymentDetailRequest;
 use Moka\Model\RetrievePaymentListRequest;
@@ -144,6 +145,19 @@ class PaymentService extends AbstractService
         $request->setPaymentDealerRequest($retrievePaymentAmountRequest);
 
         return $this->request('POST', '/PaymentDealer/DoCalcPaymentAmount', $request);
+    }
+
+    /**
+     * @param \Moka\Model\RetrieveInstallmentInfoRequest $retrieveInstallmentInfoRequest
+     * @return \Moka\ApiResponse
+     */
+    public function retrieveInstallmentInfo(RetrieveInstallmentInfoRequest $retrieveInstallmentInfoRequest)
+    {
+        $request = new PaymentDealerRequest();
+        $request->setPaymentDealerAuthentication($this->getClient()->getAuthorizationParams());
+        $request->setPaymentDealerRequest($retrieveInstallmentInfoRequest);
+
+        return $this->request('POST', '/PaymentDealer/DoCalcPaymentTable', $request);
     }
 
     /**
