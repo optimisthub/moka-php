@@ -2,7 +2,7 @@
 
 The Moka API PHP Client provides convenient access to the [Moka API](https://developer.moka.com/) from applications written in the PHP language.
 
-![image](https://optimisthub.com/cdn/moka/moka-api-php-client.png)
+![image](https://optimisthub.com/cdn/moka/moka-api-php-client.png?v2)
 
 ## Requirements
 
