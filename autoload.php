@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Moka 
+ * Moka United
  * 
  * Autoload
  *

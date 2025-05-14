@@ -1,8 +1,8 @@
-# Moka API PHP Client
+# Moka United API PHP Client
 
-The Moka API PHP Client provides convenient access to the [Moka API](https://developer.moka.com/) from applications written in the PHP language.
+The Moka United API PHP Client provides convenient access to the [Moka United API](https://developer.mokaunited.com/) from applications written in the PHP language.
 
-![image](https://optimisthub.com/cdn/moka/moka-api-php-client.png?v2)
+![image](https://optimisthub.com/cdn/moka/moka-api-php-client.png?v4)
 
 ## Requirements
 
@@ -108,8 +108,8 @@ $payment->getException();
 ```
 ## Documentation
 
-See the [Moka API docs](https://developer.moka.com).
+See the [Moka United API docs](https://developer.mokaunited.com).
 
 ## Test Cards
 
-See the [Test Cards](https://developer.moka.com/home.php?page=test-kartlari).
+See the [Test Cards](https://developer.mokaunited.com/home.php?page=test-kartlari).
