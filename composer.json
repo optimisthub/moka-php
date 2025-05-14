@@ -1,7 +1,7 @@
 {
     "name": "moka/moka-php",
     "type": "library",
-    "description": "Moka PHP Client",
+    "description": "Moka United PHP Client",
     "keywords": [
         "moka",
         "moka php",
