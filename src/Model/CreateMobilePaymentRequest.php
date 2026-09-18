@@ -32,6 +32,11 @@ class CreateMobilePaymentRequest extends Model
     /**
      * @var string
      */
+    protected $clientPort;
+
+    /**
+     * @var string
+     */
     protected $redirectUrl;
 
     /**
@@ -152,6 +157,22 @@ class CreateMobilePaymentRequest extends Model
     public function setClientIp($clientIp)
     {
         $this->clientIp = $clientIp;
+    }
+
+    /**
+     * @return string
+     */
+    public function getClientPort()
+    {
+        return $this->clientPort;
+    }
+
+    /**
+     * @param string $clientPort
+     */
+    public function setClientPort($clientPort)
+    {
+        $this->clientPort = $clientPort;
     }
 
     /**
@@ -306,6 +327,7 @@ class CreateMobilePaymentRequest extends Model
             'Currency' => $this->getCurrency(),
             'InstallmentNumber' => $this->getInstallmentNumber(),
             'ClientIP' => $this->getClientIp(),
+            'ClientPort' => $this->getClientPort(),
             'RedirectURL' => $this->getRedirectUrl(),
             'RedirectType' => $this->getRedirectType(),
             'OtherTrxCode' => $this->getOtherTrxCode(),
