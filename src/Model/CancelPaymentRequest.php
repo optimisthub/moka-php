@@ -20,6 +20,11 @@ class CancelPaymentRequest extends Model
     protected $clientIp;
 
     /**
+     * @var string
+     */
+    protected $clientPort;
+
+    /**
      * @var integer
      */
     protected $voidRefundReason;
@@ -73,6 +78,22 @@ class CancelPaymentRequest extends Model
     }
 
     /**
+     * @return string
+     */
+    public function getClientPort()
+    {
+        return $this->clientPort;
+    }
+
+    /**
+     * @param string $clientPort
+     */
+    public function setClientPort($clientPort)
+    {
+        $this->clientPort = $clientPort;
+    }
+
+    /**
      * @return integer
      */
     public function getVoidRefundReason()
@@ -94,6 +115,7 @@ class CancelPaymentRequest extends Model
             'VirtualPosOrderId' => $this->getVirtualPosOrderId(),
             'OtherTrxCode' => $this->getOtherTrxCode(),
             'ClientIP' => $this->getClientIp(),
+            'ClientPort' => $this->getClientPort(),
             'VoidRefundReason' => $this->getVoidRefundReason()
         ];
     }

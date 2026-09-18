@@ -25,6 +25,11 @@ class CaptureRequest extends Model
     protected $clientIp;
 
     /**
+     * @var string
+     */
+    protected $clientPort;
+
+    /**
      * @return string
      */
     public function getVirtualPosOrderId()
@@ -88,13 +93,30 @@ class CaptureRequest extends Model
         $this->clientIp = $clientIp;
     }
 
+    /**
+     * @return string
+     */
+    public function getClientPort()
+    {
+        return $this->clientPort;
+    }
+
+    /**
+     * @param string $clientPort
+     */
+    public function setClientPort($clientPort)
+    {
+        $this->clientPort = $clientPort;
+    }
+
     public function toArray()
     {
         return [
             'VirtualPosOrderId' => $this->getVirtualPosOrderId(),
             'OtherTrxCode' => $this->getOtherTrxCode(),
             'Amount' => $this->getAmount(),
-            'ClientIP' => $this->getClientIP()
+            'ClientIP' => $this->getClientIP(),
+            'ClientPort' => $this->getClientPort()
         ];
     }
 }
