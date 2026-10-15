@@ -2,7 +2,7 @@
 
 The Moka United API PHP Client provides convenient access to the [Moka United API](https://developer.mokaunited.com/) from applications written in the PHP language.
 
-![image](https://optimisthub.com/cdn/moka/moka-api-php-client.png?v4)
+![Moka United API PHP Client](.github/assets/github-cover.png)
 
 ## Requirements
 
